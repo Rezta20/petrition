@@ -1,0 +1,17 @@
+# 本機 Postgres。啟動：npm run db:up（= docker compose up -d）
+services:
+  db:
+    image: postgres:17
+    container_name: petrition-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: petrition
+    ports:
+      - "54321:5432" # 電腦上的 54321 → 盒子裡的 5432
+    volumes:
+      - petrition-pgdata:/var/lib/postgresql/data # 資料存這裡，關機不會不見
+
+volumes:
+  petrition-pgdata:

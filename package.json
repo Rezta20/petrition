@@ -1,0 +1,35 @@
+{
+  "name": "petrition",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:phone": "nuxt dev --host",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "db:up": "docker compose up -d",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.129",
+    "@nuxt/ui": "^4.11.0",
+    "drizzle-orm": "^0.45.2",
+    "nuxt": "^4.5.2",
+    "postgres": "^3.4.9",
+    "tailwindcss": "^4.3.3",
+    "zod": "^4.6.1"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.0",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
