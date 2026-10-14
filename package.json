@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
+    "test": "vitest run",
     "db:up": "docker compose up -d",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -27,6 +28,7 @@
     "dotenv": "^17.2.0",
     "drizzle-kit": "^0.31.10",
     "typescript": "^6.0.3",
+    "vitest": "^5.0.4",
     "vue-tsc": "^3.3.11"
   },
   "engines": {
